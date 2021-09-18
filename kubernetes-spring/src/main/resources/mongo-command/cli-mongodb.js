@@ -1,0 +1,1 @@
+db.notes.remove({"_id" : ObjectId("5e7824ec3c6fd82d0d37e1d6")})
