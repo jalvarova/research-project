@@ -5,7 +5,8 @@ target/
 !**/src/test/**
 app-knote/**
 container/**.jar
-
+env.sh
+account.json
 ### STS ###
 .apt_generated
 .classpath

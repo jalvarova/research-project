@@ -2,20 +2,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: knote
+  name: app-spring
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: knote
+      app: app-spring
   template:
     metadata:
       labels:
-        app: knote
+        app: app-spring
     spec:
       containers:
-        - name: app
-          image: javadevelop/knote-java:2.0.0
+        - name: app-spring
+          image: gcr.io/jalvarova/app-spring:1.0.0
           ports:
             - containerPort: 8080
           env:
@@ -28,19 +28,19 @@ spec:
             - name: MINIO_HOST
               value: minio
             - name: MINIO_SECURED
-              value: false
+              value: "false"
             - name: MINIO_PORT
-              value: 9000
+              value: "9000"
           imagePullPolicy: Always
 ---
 # ... Service YAML definition
 apiVersion: v1
 kind: Service
 metadata:
-  name: knote
+  name: app-spring
 spec:
   selector:
-    app: knote
+    app: app-spring
   ports:
     - port: 80
       targetPort: 8080
