@@ -1,0 +1,4 @@
+create sequence SEQ_CLIENTE start with 5;
+
+
+CREATE SEQUENCE SEQ_VEHICULO START WITH 1;
