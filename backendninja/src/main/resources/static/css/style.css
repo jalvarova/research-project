@@ -1,0 +1,13 @@
+
+table {
+  border: red 5px solid;
+  border-collapse: collapse;
+}
+
+.tbody {
+  border: blue 5px solid;
+}
+
+tr {
+  border: 1px solid green;
+}

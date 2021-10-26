@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Spring MVC Hello</title>
+<link href="assts/css/style.css" rel ="StyleSheet" type="text/css" /> 
+</head>
+<body>
+  
+	<table>
+		<thead>
+			<tr>
+				<th>Code</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody th:each="course : ${courses}">
+			<tr>
+				<th th:text="${course.codCourse}"></th>
+				<th th:text="${course.descripCourse}"></th>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

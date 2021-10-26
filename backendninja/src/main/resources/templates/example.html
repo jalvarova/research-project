@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Spring MVC Hello</title>
+<link href="assts/css/style.css" rel ="StyleSheet" type="text/css" /> 
+</head>
+<body>
+	<h1>
+		Example the View <span th:text="${person.name}"></span>
+	</h1>
+
+	Name is :
+	<h1 th:text="${person.name}"></h1>
+	&emsp; Age is :
+	<h1 th:text="${person.age}"></h1>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Code</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody th:each="course : ${courses}">
+			<tr>
+				<th th:text="${course.codCourse}"></th>
+				<th th:text="${course.descripCourse}"></th>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

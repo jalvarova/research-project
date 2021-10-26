@@ -1,0 +1,29 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from LlamarServicioPalabrasService WSDL service -->
+
+  <service name="LlamarServicioPalabras" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://cliente.llamado.ejemplo"/>
+      <parameter name="wsdlServiceElement" value="LlamarServicioPalabrasService"/>
+      <parameter name="schemaQualified" value="http://cliente.llamado.ejemplo"/>
+      <parameter name="wsdlServicePort" value="LlamarServicioPalabras"/>
+      <parameter name="className" value="ejemplo.llamado.cliente.LlamarServicioPalabrasSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="LlamarServicioPalabras"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="main" qname="operNS:main" xmlns:operNS="http://cliente.llamado.ejemplo" soapAction="" >
+        <parameter qname="pns:args" xmlns:pns="http://cliente.llamado.ejemplo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="main"/>
+
+  </service>
+</deployment>

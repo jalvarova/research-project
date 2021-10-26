@@ -1,0 +1,41 @@
+server:
+  port: 9090
+#Banner of the Spring Boot
+banner:
+  location: classpath:/static/banner.txt
+#Spring Properties
+spring:
+  aop:
+    auto: true
+    proxy-target.class: false
+  messages:
+    always-use-message-format: false
+    basename : messages
+    cache-seconds: 1
+  mvc:
+    dispatch-trace-request: false
+    dispatch-options-request: true
+  couchbase:
+    bucket:
+      name: default
+  datasource:
+    url: jdbc:mysql://localhost:3306/backenkdb?useSSL=false
+    username: root
+    password: mysql
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+---
+#Security properties
+security:
+  oauth2:
+   resource:
+     prefer-token-info: true
+     service-id: resource
+

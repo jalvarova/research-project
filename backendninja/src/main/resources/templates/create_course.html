@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1" />
+<title>Create Course</title>
+</head>
+<body>
+	<form action="#" th:action="@{/exampleForm/addcourse}" th:object="${course}" method="post">
+		Code is : <input type="text" id="cod" th:field="*{codCourse}" required="" /> 
+		<p th:if="${#fields.hasErrors('codCourse')}" th:erros="*{codCourse}">Code not has max the letters</p>
+		&emsp; 
+		Descripcion is : <input type="text" id="descrip" th:field="*{descripCourse}" required="" /> 
+		
+		<input value="Ingresar" type="submit" />
+	    
+	</form>
+</body>
+</html>

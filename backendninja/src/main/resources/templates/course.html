@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1"/>
+    <title>Insert title here</title>
+    <link href="../static/css/style.css" rel ="StyleSheet" type="text/css" />
+    <style>
+        table, td, th {
+            border: 1px solid black;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        tr {
+            border: green 5px solid;
+        }
+    </style>
+</head>
+<body>
+
+
+<form action="#" th:action="@{/courses/add}" th:object="${course}" method="post">
+
+    <p> Name is : &emsp;<input type="text" id="descrip" th:field="*{name}" required=""/></p>
+    <p> Description is : &emsp;<input type="text" id="descrip" th:field="*{description}" required=""/></p>
+    <p> Price is : &emsp;<input type="text" id="descrip" th:field="*{price}" required=""/></p>
+    <p> Hours is : &emsp;<input type="text" id="descrip" th:field="*{hours}" required=""/></p>
+    <p><input type="submit" value="Register"/></p>
+</form>
+
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Hours</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="course : ${courses}">
+        <th th:text="${course.name}"></th>
+        <th th:text="${course.description}"></th>
+        <th th:text="${course.price}"></th>
+        <th th:text="${course.hours}"></th>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
