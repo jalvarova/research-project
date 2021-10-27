@@ -1,0 +1,385 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+
+html, body {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	font: inherit
+}
+
+.smart-wrap {
+	padding: 0;
+}
+
+.smart-forms, .smart-forms * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.smart-container {
+	background:url(../Imagenes/formFondo.jpg);
+	margin: 0px auto;
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+	-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+	-o-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	height: auto;
+}
+.wrap-3 {
+	/*max-width: 940px;*/
+	width: 100%;
+}
+
+.smart-forms .section {
+	margin-bottom: 22px
+}
+
+.smart-forms .section1 {
+	margin-bottom: 12px
+}
+
+.smart-forms .field-label {
+	display: block;
+	margin-bottom: 7px
+}
+
+.smart-forms .field-label.colm {
+	padding-top: 12px
+}
+
+.smart-forms .field-label em {
+	color: #e74c3c;
+	font-size: 14px;
+	font-style: normal;
+	display: inline-block;
+	margin-left: 4px;
+	position: relative;
+	top: 3px
+}
+
+.smart-forms .form-header {
+	overflow: hidden;
+	position: relative;
+	padding: 22px 30px;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0
+}
+
+.smart-forms .form-header h4 {
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+	text-align: left;
+	font-weight: 300;
+	font-size: 30px;
+	padding: 0;
+	margin: 0
+}
+
+.smart-forms .header-primary {
+	background-color: #1B52C9;
+	border-top: 1px solid #00014E;
+	border-bottom: 5px solid #00014E
+}
+
+.smart-forms .header-primary h4 {
+	color: #fff;
+	text-align:center;
+}
+
+.smart-forms .form-body {
+	padding: 20px 30px;
+	padding-bottom: 20px;
+	width: 100%;/*-------------*/
+	height: 100%;
+}
+
+.smart-forms .form-footer {
+	overflow: hidden;
+	padding: 80px 25px;
+	padding-top: 25px;
+	background: #4F6266;
+	
+	/*Cambios
+	float: left;*/
+	width: 100%;
+}
+
+.smart-forms label, .smart-forms input, .smart-forms button,
+	.smart-forms select{
+	margin: 0;
+	font-size: 14px;
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	color: #fff;
+	outline: 0
+}
+
+.smart-forms .select, .smart-forms .gui-input,.smart-forms .select>select {
+	background: #5B657B;/*Color Caja de Texto y Combo*/
+	position: relative;
+	vertical-align: top;
+	border: 2px solid #bdc3c7;
+	display: -moz-inline-stack;
+	display: inline-block;
+	*display: inline;
+	color: #FFF;
+	outline: 0;
+	height: 40px;
+	width: 100%;
+	*zoom: 1
+}
+
+
+.smart-forms .gui-input, .smart-forms .gui-textarea {
+	padding: 10px
+}
+
+.smart-forms .select {
+	border: 0;
+	z-index: 10
+}
+
+.smart-forms .select>select {
+	display: block;
+	padding: 9px 10px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: 0;
+	text-indent: .01px;
+	text-overflow: '';
+	z-index: 10;
+	margin: 0
+}
+
+.smart-forms .select>select::-ms-expand {
+	display: none
+}
+
+.smart-forms .select:before, .smart-forms .select:after {
+	content: '';
+	position: absolute;
+	pointer-events: none;
+	z-index: 15
+}
+
+.smart-forms .select:before {
+	top: 2px;
+	right: 2px;
+	width: 34px;
+	bottom: 2px;
+	background: #f2f4fa;
+	border-left: 1px solid #d3dae7;
+	-webkit-border-radius: 0 1px 1px 0;
+	-moz-border-radius: 0 1px 1px 0;
+	-o-border-radius: 0 1px 1px 0;
+	border-radius: 0 1px 1px 0
+}
+
+.smart-forms .select .arrow {
+	position: absolute;
+	top: 9px;
+	right: 5px;
+	width: 24px;
+	height: 24px;
+	background: #f2f4fa;
+	color: #b5c1c7;
+	pointer-events: none;
+	z-index: 16
+}
+
+.smart-forms .select .arrow:after, .smart-forms .select .arrow:before {
+	content: '';
+	position: absolute;
+	font: 12px "Consolas", monospace;
+	font-style: normal;
+	pointer-events: none;
+	left: 6px
+}
+
+.smart-forms .select .arrow:before {
+	content: '\25BC';
+	bottom: 4px
+}
+.smart-forms .file {
+	display: block;
+	width: 100%
+}
+
+.smart-forms .file .gui-file {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	padding: 8px 10px;
+	position: absolute;
+	-moz-opacity: 0;
+	opacity: 0;
+	z-index: 11;
+	bottom: 0;
+	right: 0
+}
+
+.smart-forms .file .button {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	float: none;
+	height: 34px;
+	line-height: 34px;
+	padding: 0 16px;
+	z-index: 10
+}
+
+#btnBuscar{
+	float: right;
+	height: 32px;
+	width: 120px;
+}
+
+/*****************************/	
+.smart-forms .gui-input:focus, .smart-forms .gui-textarea:focus, .state-success .gui-input,
+	.smart-forms .select>select:focus, .smart-forms .select-multiple select:focus
+	{
+	border-color: #0745A8; /*Color de Contorno de la caja de texto*/
+	color: #3c3c3c;
+}
+
+.smart-forms .gui-textarea:focus {
+	height: 120px
+}
+
+.smart-forms .select>select:focus {
+	z-index: 10;
+	z-index: 20\9
+}
+
+.smart-forms .select>select:focus+.arrow {
+	color: #0745A8
+}
+
+.smart-forms .option {
+	position: relative;
+	padding-right: 15px;
+	display: inline-block;
+	vertical-align: middle
+}
+
+.smart-forms .option>input {
+	position: absolute;
+	height: inherit;
+	width: inherit;
+	opacity: 0;
+	left: 0
+}
+
+.smart-forms .button {
+	border: 0;
+	height: 42px;
+	color: #243140;
+	line-height: 1;
+	font-size: 15px;
+	cursor: pointer;
+	padding: 0 18px;
+	text-align: center;
+	vertical-align: top;
+	background: #0D33A4;
+	display: inline-block;
+	-webkit-user-drag: none;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+}
+
+.smart-forms .btn-primary:hover, .smart-forms .btn-primary:focus {
+	background-color: #2454E5;
+}
+
+.smart-forms .btn-primary:active {
+	background-color: #023549;
+}
+
+.smart-forms .btn-primary, .smart-forms .btn-primary:hover, .smart-forms .btn-primary:focus,
+	.smart-forms .btn-primary:active {
+	color: #fff;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.08)
+}
+
+/*****************************/
+.smart-forms .state-success .gui-input{
+	background: #5B657B;
+	border-color: #bdc3c7;
+}
+
+.smart-forms .field {
+	display: block;
+	position: relative
+}
+
+#separadorFormu{
+	width: 45%;
+	float: left;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+#separadorFormu1{
+	width: 28%;
+	float: left;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+
+.form-footer h5{
+	color: #FFF;
+	font-size: 13px;
+	font-family: 'Verdana';
+	font-weight: normal;
+	margin-top: 6px;
+	
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.smart-forms .option, .smart-forms .rating, .smart-forms .switch,
+		.smart-forms .captcode {
+		-webkit-animation: bugfix infinite 1s
+	}
+	@
+	-webkit-keyframes bugfix {
+		from {
+			padding: 0
+		}
+		to {
+			padding: 0
+		}
+	}
+	.smart-forms .option {
+		margin-right: 15px
+	}
+}
+
+@media ( max-width :600px) {
+	.smart-forms .frm-row {
+		margin: 0
+	}
+	.smart-forms .frm-row .colm {
+		width: 100%;
+		float: none;
+		padding: 0
+	}
+}
+
+@media ( max-width :200px) {
+	.smart-forms .form-footer{
+		float: left;
+	}
+	body{
+		background:url(../Imagenes/formFondo.jpg);
+	}
+}

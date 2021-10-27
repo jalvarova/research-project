@@ -1,0 +1,86 @@
+@CHARSET "UTF-8";
+*{
+	margin:0;
+	padding: 0;
+}
+
+#destinos img{
+	border: 2px solid;
+	border-radius:100%;
+}
+footer{
+	clear: both;
+}
+#resultados h5{
+	text-align: center;
+}
+
+#txtFechaViaje{
+	 display: inline-block;
+	 width:10em;
+	 text-align: center;
+}
+#filaResultado img{
+	display:inline-block;
+	height: 10em;
+}
+#resultados #descripcion,#resultados #datosViaje{
+
+}
+#resultados #datosViaje{
+	
+}
+
+.pisos{
+	position: relative;	
+	float: left;
+	width: 209px;
+	height: 545px; 
+	
+}
+.tituloPisos{
+	text-align: center;
+	margin-top: 1.5em;
+	
+}
+.piso1{
+	background: url(../Imagenes/bus1piso.png); 
+}
+
+.piso2{
+	background: url(../Imagenes/bus2piso.png);
+}
+
+
+.tablaAsientos{
+ margin-top: 2em;
+}
+.tablaAsientos td{
+	font-size: 0.7em;
+}
+.asientoOcupado{
+	background-color: gray;
+}
+.asientoOcupado:hover{
+	
+}
+.asientoLibre{
+	color: blue;
+}
+.tablaAsientos td:not(.aVacio):not(.asientoOcupado):hover{
+	background-color: yellow;
+}
+.asientoSeleccionado{
+	background-color: red;
+}
+.obligatorio{
+	color: red;
+}
+.total{
+	color: green;
+	font-size: large;
+	font-weight: bold;
+}
+/* #datosBoleto{
+	display:none;
+} */

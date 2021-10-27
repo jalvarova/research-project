@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.0</jspversion>
+	<shortname>Custom Tags</shortname>
+	
+	<tag>
+		<name>combodocumento</name>
+		<tagclass>etiquetas.ComboDocumento</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra un combo</info>
+	</tag>
+	
+	<tag>
+		<name>combociudad</name>
+		<tagclass>etiquetas.ComboCiudad</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra un combo</info>
+	</tag>
+	
+	<tag>
+		<name>tablacliente</name>
+		<tagclass>etiquetas.TablaCliente</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra una tabla</info>
+	</tag>
+	
+	<tag>
+		<name>combobus</name>
+		<tagclass>etiquetas.ComboBus</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra un combo</info>
+	</tag>
+	
+	<tag>
+		<name>combochofer</name>
+		<tagclass>etiquetas.ComboChofer</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra un combo</info>
+	</tag>
+	
+	<tag>
+		<name>comboterramoza</name>
+		<tagclass>etiquetas.ComboTerramoza</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra un combo</info>
+	</tag>
+	
+	<tag>
+		<name>comboruta</name>
+		<tagclass>etiquetas.ComboRuta</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra un combo</info>
+	</tag>
+</taglib>

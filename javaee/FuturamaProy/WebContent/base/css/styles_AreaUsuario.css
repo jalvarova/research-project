@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+body {background:#FEFEFE;}
+
+.menu_bar {
+	float: right;
+	width: 100%;
+	height: 170px;
+	background-color: #CCC;
+	display: block;
+	position: fixed;
+	background-image: url(../img/AreaUsuario/fondo_Header.png);
+	background-repeat: repeat-x;
+}
+
+
+.logo{
+	position: absolute;
+	left: 61px;
+	top: 14px;
+	
+}
+
+.titulo{
+	position: absolute;
+	left: -6px;
+	top: 37px;
+	width: 335px;
+	height: 93px;
+}
+
+
+
+
+.AreTrabajo{
+	float: right;
+	width: 100%;
+	height: 100%;
+	
+	display: block;
+	margin-top:170px;
+	
+	
+	
+}
+
+
+
+header {
+	width: 100%;
+}
+
+header nav {
+	position: fixed;
+
+	margin: 0;
+	
+	/*right:100%;*/
+	background:#7E0400;
+	z-index:1000;
+	max-width: 1000px;
+	width: 227px;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+
+header nav ul {
+	margin-top:220px;
+	list-style:none;
+}
+
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+
+header nav ul li:hover {
+	background:#E05600;
+}
+
+header nav ul li a {
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+}
+
+
+header nav ul li span.Desplegar{
+
+	
+	float:right;
+}
+
+
+
+header nav ul li:hover .children {
+	display:block;
+}
+
+header nav ul li .children {
+	display: none;
+	background:#F79620;
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+}
+
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a {
+	display: block;
+}
+
+
+/*----------------------------------------------------*/
+
+
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+
+	header nav ul li a {
+		display: block;
+	}
+
+	header nav ul li:hover .children {
+		margin-top:0px;
+		display: none;
+	}
+
+	header nav ul li .children {
+		margin-top:0px;
+		width: 100%;
+		position: relative;
+	}
+
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
